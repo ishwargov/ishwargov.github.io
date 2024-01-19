@@ -67,7 +67,7 @@ export const RESUME_DATA = {
       badges: ["Bangalore"],
       title: "Software Engineer",
       logo: ParabolLogo,
-      start: "2023 July",
+      start: "2023 Jul",
       end: "Present",
       description:
         "Currently working on Arista's EOS, a fully programmable and highly modular, Linux-based network operation system.",
@@ -89,8 +89,8 @@ export const RESUME_DATA = {
       badges: ["Remote"],
       title: "AI Research Intern",
       logo: JojoMobileLogo,
-      start: "2021 May",
-      end: "2021 Apr",
+      start: "2021 Jun",
+      end: "2021 Jul",
       description:
         "Developed a Hybrid DeepLearning Model using MTCNN, FaceNet and InceptionNet for Anti-Spoof Face Recognition. Created a Flask Web App to add, train and predict faces.",
     },
@@ -119,6 +119,34 @@ export const RESUME_DATA = {
       link: {
         label: "",
         href: "",
+      },
+    },
+    {
+      title: "Deep Weather Forecasting",
+      techStack: [
+        "SequenceModels",
+        "TensorFlow",
+        "Python",
+      ],
+      description: "Developed a ConvLSTM-based model to improve Indian Summer Monsoon Rainfall (ISMR) forecasting by analyzing spatio-temporal patterns in ISMR dataset and incorporating climatic oscillation variables",
+      logo: ConsultlyLogo,
+      link: {
+        label: "",
+        href: "",
+      },
+    },
+    {
+      title: "PlexShare",
+      techStack: [
+        ".NET",
+        "C#",
+        "Azure",
+      ],
+      description: "A lab session monitoring application that allows an instructor and students to interact, collaborate and share content in the form of chat messages and files. It also supports a digital whiteboard and screensharing options.",
+      logo: ConsultlyLogo,
+      link: {
+        label: "",
+        href: "https://www.youtube.com/watch?v=qAjuYhqLNBo",
       },
     },
   ],

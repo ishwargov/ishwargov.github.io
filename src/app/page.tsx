@@ -18,13 +18,13 @@ export default function Page() {
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
-        <div className="flex items-center gap-x-3 align-baseline leading-none">
-          <a href="/"><h2 className="font-mono text-sm hover:underline">About</h2></a>
-          |
-          <a href="/blog"><h2 className="font-mono text-sm hover:underline">Blog</h2></a>
+        <div className="flex items-center gap-x-3 align-baseline leading-none print:hidden">
+            <a href="/"><h2 className="font-mono text-sm hover:underline">About</h2></a>
+            |
+            <a href="/blog"><h2 className="font-mono text-sm hover:underline">Blog</h2></a>
         </div>
         <div className="flex items-center justify-between gap-x-10">
-          <div className="flex-1 space-y-1.5">
+          <div className="flex-1 space-y-1.5 min-w-1">
             <h1 className="text-2xl font-bold ">{RESUME_DATA.name}</h1>
             <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
               {RESUME_DATA.about}
@@ -91,7 +91,6 @@ export default function Page() {
               ) : null}
             </div>
           </div>
-
           <Avatar className="">
             <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
             <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
