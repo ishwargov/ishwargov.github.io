@@ -173,7 +173,7 @@ export const RESUME_DATA = {
       logo: ConsultlyLogo,
       link: {
         label: "",
-        href: "https://colab.research.google.com/drive/1TwtLbmrzzfU2hLKhp11m1tfjEeo1f3hG?usp=sharing",
+        href: "",
       },
     },
     {
