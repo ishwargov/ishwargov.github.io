@@ -7,7 +7,7 @@ import { Section } from "@/components/ui/section";
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
-import { ProjectCard } from "@/components/project-card";
+import { ProjectCard, BlogCard } from "@/components/project-card";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -200,6 +200,24 @@ export default function Page() {
             })}
           </div>
         </Section>
+
+        <Section className="print-force-new-page scroll-mb-16">
+          <h2 className="text-xl font-bold">Posts</h2>
+          <div className="-mx-3 grid grid-cols-1 gap-3">
+            {RESUME_DATA.posts.map((posts) => {
+              return (
+                <BlogCard
+                  key={posts.title}
+                  title={posts.title}
+                  description={posts.description}
+                  tags={posts.techStack}
+                  link={"link" in posts ? posts.link.href : undefined}
+                />
+              );
+            })}
+          </div>
+        </Section>
+
       </section>
 
       <CommandMenu

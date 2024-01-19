@@ -29,7 +29,7 @@ export const RESUME_DATA = {
   summary:
     "I'm a software engineer with experience in low latency systems software. Also passionate about applying AI, particularly RL, to solve real-world problems.",
   avatarUrl: "https://lh3.googleusercontent.com/drive-viewer/AEYmBYRPYSf4IA0iSkcZFIkAqbJ1evR9cyV3HxI6TEqidLps4rGLyPNs3RXvdQSmL4xKdKaiKAVqdRY_vgO740xVzhVsm0WZaw=s1600",
-  personalWebsiteUrl: "https://github.ishwargov.io",
+  personalWebsiteUrl: "https://ishwargov.github.io",
   contact: {
     email: "ishwar.govind@gmail.com",
     tel: "0",
@@ -187,6 +187,31 @@ export const RESUME_DATA = {
       link: {
         label: "",
         href: "https://github.com/ishwargov/ToyRISC",
+      },
+    },
+  ],
+  posts: [
+    {
+      title: "Post 1",
+      techStack: [
+        "posttag",
+      ],
+      description: "post 1",
+      link: {
+        label: "",
+        href: "/",
+      },
+    },
+    {
+      title: "Post 2",
+      techStack: [
+        "posttag",
+        "posttags",
+      ],
+      description: "post 2",
+      link: {
+        label: "",
+        href: "/",
       },
     },
   ],
