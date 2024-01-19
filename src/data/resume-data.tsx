@@ -149,5 +149,45 @@ export const RESUME_DATA = {
         href: "https://www.youtube.com/watch?v=qAjuYhqLNBo",
       },
     },
+    {
+      title: "Tiger Compiler",
+      techStack: [
+        "Standard ML",
+        "MIPS",
+        "Compilers",
+      ],
+      description: "Created a Compiler for the Tiger Language using Standard ML. Uses ML-LEX for lexing and ML-YACC for parsing. Translates Tiger Language to MIPS Assembly using MIPS Intermediate Representation.",
+      logo: ConsultlyLogo,
+      link: {
+        label: "",
+        href: "https://github.com/ishwargov/Tiger-Compiler",
+      },
+    },
+    {
+      title: "Debiasing Word Embeddings",
+      techStack: [
+        "ML",
+        "Responsible AI",
+      ],
+      description: "Reducing the Amplification of Gender Bias in NLP Models by hard-debiasing word embeddings of gender neutral words without loss of Semantic Information.",
+      logo: ConsultlyLogo,
+      link: {
+        label: "",
+        href: "https://colab.research.google.com/drive/1TwtLbmrzzfU2hLKhp11m1tfjEeo1f3hG?usp=sharing",
+      },
+    },
+    {
+      title: "ToyRISC",
+      techStack: [
+        "Java",
+        "RISC",
+      ],
+      description: "Developed and Optimized a Toy RISC-V Simulator in Java. Added Instruction Pipeline, Discrete Event Simulator and L1 Cache to improve its efficiency.",
+      logo: ConsultlyLogo,
+      link: {
+        label: "",
+        href: "https://github.com/ishwargov/ToyRISC",
+      },
+    },
   ],
 } as const;
