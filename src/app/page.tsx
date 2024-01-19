@@ -201,23 +201,6 @@ export default function Page() {
           </div>
         </Section>
 
-        <Section className="print-force-new-page scroll-mb-16">
-          <h2 className="text-xl font-bold">Posts</h2>
-          <div className="-mx-3 grid grid-cols-1 gap-3">
-            {RESUME_DATA.posts.map((posts) => {
-              return (
-                <BlogCard
-                  key={posts.title}
-                  title={posts.title}
-                  description={posts.description}
-                  tags={posts.techStack}
-                  link={"link" in posts ? posts.link.href : undefined}
-                />
-              );
-            })}
-          </div>
-        </Section>
-
       </section>
 
       <CommandMenu
