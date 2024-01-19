@@ -24,7 +24,7 @@ export default function Page() {
             <a href="/blog"><h2 className="font-mono text-sm hover:underline">Blog</h2></a>
         </div>
         <div className="flex items-center justify-between gap-x-10">
-          <div className="flex-1 space-y-1.5 min-w-1">
+          <div className="flex-1 space-y-1.5 min-w-20">
             <h1 className="text-2xl font-bold ">{RESUME_DATA.name}</h1>
             <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
               {RESUME_DATA.about}
