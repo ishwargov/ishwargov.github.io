@@ -53,7 +53,7 @@ export const RESUME_DATA = {
   },
   education: [
     {
-      school: "IIT Palakkad",
+      school: "Indian Institute of Technology, Palakkad",
       degree: "BTech. (Hons) in Computer Science and Engineering.",
       tags: ["Algorithms","ML","Responsible AI","NLP", "Networks", "OS", "DBMS"],
       start: "2019",
