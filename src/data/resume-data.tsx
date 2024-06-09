@@ -1,21 +1,8 @@
 import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
   ClevertechLogo,
   ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
-  JarockiMeLogo,
   JojoMobileLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
   ParabolLogo,
-  TastyCloudLogo,
-  YearProgressLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
@@ -28,7 +15,7 @@ export const RESUME_DATA = {
     "Software Engineer",
   summary:
     "I'm a software engineer with experience in low latency systems software. Also passionate about applying AI, particularly RL, to solve real-world problems.",
-  avatarUrl: "https://lh3.googleusercontent.com/drive-viewer/AEYmBYRPYSf4IA0iSkcZFIkAqbJ1evR9cyV3HxI6TEqidLps4rGLyPNs3RXvdQSmL4xKdKaiKAVqdRY_vgO740xVzhVsm0WZaw=s1600",
+  avatarUrl: "/dp.jpg",
   personalWebsiteUrl: "https://ishwargov.github.io",
   contact: {
     email: "ishwar.govind@gmail.com",
@@ -196,19 +183,7 @@ export const RESUME_DATA = {
       techStack: [
         "posttag",
       ],
-      description: "post 1",
-      link: {
-        label: "",
-        href: "/",
-      },
-    },
-    {
-      title: "Post 2",
-      techStack: [
-        "posttag",
-        "posttags",
-      ],
-      description: "post 2",
+      description: "helloworld",
       link: {
         label: "",
         href: "/",
