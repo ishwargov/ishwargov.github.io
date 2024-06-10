@@ -74,7 +74,7 @@ export const RESUME_DATA = {
       company: "UST",
       link: "https://www.ust.com/",
       badges: ["Remote"],
-      title: "AI Research Intern",
+      title: "AI Intern",
       logo: JojoMobileLogo,
       start: "2021 Jun",
       end: "2021 Jul",
