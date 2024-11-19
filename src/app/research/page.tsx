@@ -20,7 +20,7 @@ export default function Page() {
         </div>
 
         <Section className="print-force-new-page scroll-mb-16">
-          <h2 className="text-xl font-bold">Papers</h2>
+          <h2 className="text-xl font-bold">Research</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3">
             {RESUME_DATA.posts.map((posts) => {
               return (
