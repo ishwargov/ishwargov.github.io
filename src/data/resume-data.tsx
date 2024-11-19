@@ -14,7 +14,7 @@ export const RESUME_DATA = {
   about:
     "Software Engineer",
   summary:
-    "I'm a software engineer with experience in low latency systems software. Also passionate about applying AI, particularly RL, to solve real-world problems.",
+    "I am a software engineer specializing in low latency system software with a keen interest in applying AI and reinforcement learning to real-world problems.",
   avatarUrl: "/dp.jpg",
   personalWebsiteUrl: "https://ishwargov.github.io",
   contact: {
@@ -109,20 +109,6 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Deep Weather Forecasting",
-      techStack: [
-        "SequenceModels",
-        "TensorFlow",
-        "Python",
-      ],
-      description: "Developed a ConvLSTM-based model to improve Indian Summer Monsoon Rainfall (ISMR) forecasting by analyzing spatio-temporal patterns in ISMR dataset and incorporating climatic oscillation variables",
-      logo: ConsultlyLogo,
-      link: {
-        label: "",
-        href: "",
-      },
-    },
-    {
       title: "PlexShare",
       techStack: [
         ".NET",
@@ -179,14 +165,27 @@ export const RESUME_DATA = {
   ],
   posts: [
     {
-      title: "Post 1",
+      title: "Deployability of Deep Reinforcement Learning in Portfolio Management",
       techStack: [
-        "posttag",
+        "Reinforcement Learning", "Quantitative Finance",
       ],
-      description: "helloworld",
+      description: "Explores challenges in portfolio management with deep reinforcement learning, focusing on baseline comparisons and policy evaluation. Using a synthetic market based on the BEKK model, it highlights varying agent performance and showcases alignment with maximum Sharpe Ratio optimal policies for agents excelling in the simulated environment.",
       link: {
         label: "",
-        href: "/",
+        href: "/Portfolio_RL_Camera_Ready.pdf",
+      },
+    },
+    {
+      title: "Deep Weather Forecasting",
+      techStack: [
+        "Time Series Forecasting",
+        "Deep Learning",
+      ],
+      description: "Developed a ConvLSTM-based model to improve Indian Summer Monsoon Rainfall (ISMR) forecasting by analyzing spatio-temporal patterns in ISMR dataset and incorporating climatic oscillation variables",
+      logo: ConsultlyLogo,
+      link: {
+        label: "",
+        href: "https://github.com/ishwargov/Deep-Weatherforecast",
       },
     },
   ],

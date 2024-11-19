@@ -16,11 +16,11 @@ export default function Page() {
         <div className="flex items-center gap-x-3 align-baseline leading-none print:hidden">
             <a href="/"><h2 className="font-mono text-sm hover:underline">About</h2></a>
             |
-            <a href="/blog"><h2 className="font-mono text-sm hover:underline">Blog</h2></a>
+            <a href="/research"><h2 className="font-mono text-sm hover:underline">Research</h2></a>
         </div>
 
         <Section className="print-force-new-page scroll-mb-16">
-          <h2 className="text-xl font-bold">Posts</h2>
+          <h2 className="text-xl font-bold">Papers</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3">
             {RESUME_DATA.posts.map((posts) => {
               return (

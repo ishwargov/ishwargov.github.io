@@ -21,7 +21,7 @@ export default function Page() {
         <div className="flex items-center gap-x-3 align-baseline leading-none print:hidden">
             <a href="/"><h2 className="font-mono text-sm hover:underline">About</h2></a>
             |
-            <a href="/blog"><h2 className="font-mono text-sm hover:underline">Blog</h2></a>
+            <a href="/research"><h2 className="font-mono text-sm hover:underline">Research</h2></a>
         </div>
         <div className="flex items-center justify-between gap-x-10">
           <div className="flex-1 space-y-1.5 min-w-20">
