@@ -6,8 +6,8 @@ import "./globals.css";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Ishwar Govind",
-  description: "building stuff",
+  title: "Ishwar Govind's Home page",
+  description: "",
 };
 
 // If loading a variable font, you don't need to specify the font weight
