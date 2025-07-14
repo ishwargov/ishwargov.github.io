@@ -1,0 +1,84 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Ishwar Govind
+    # - name: Date of Birth
+    #   value: 14th March 1879
+    # - name: Languages
+    #   value: English, Hindi, Malayalam
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Bachelor of Technology (Hons.)
+      institution: Indian Institute of Technology (IIT) Palakkad
+      year: 2023
+      description:
+        - Computer Science and Engineering
+        - "Bachelor's Thesis: Portfolio Optimization using Reinforcement Learning"
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Software Engineer
+      institution: Arista Networks
+      year: 2023/07 - present
+      description:
+        - Developing netowrking features, particularly related to routing and L3 interfaces on Arista's 7060X4/5 and 7050X4 chips.
+        - Implemented a faster stateful switchover methodology in Arista's Extensible Operating System (EOS).
+    - title: Software Engineer Intern
+      institution: Arista Networks
+      year: 2022/05 - 2022/08
+      description:
+          - Worked on a fully programmable and highly modular Linux-based operating system (EOS) with a multi-process state-sharing architecture.
+          - Contributed to L3 multicast features for the StrataXGS team, assisting in programming ASIC for a specific routing scenario involving unknown multicast packets.
+    - title: AI Research Intenr
+      institution: UST
+      year: 2021/06 - 2021/07
+      description:
+          - Engineered a hybrid deep learning model integrating MTCNN, FaceNet for face recognition and InceptionNet for anti-spoofing, enhancing accuracy and security.
+          - Developed an application to facilitate face management, including adding, fine-tuning model, and predicting faces in real-time.
+    # - title: Professor of Theoretical Physics
+    #   institution: Karl-Ferdinand University, Prague, Czechoslovakia
+    #   year: 1911 - 1917
+    #   description:
+
+    # - title: Associate Professor of Theoretical Physics
+    #   institution: University of Zurich, Zurich, Switzerland
+    #   year: 1909 - 1911
+
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+      year: 2015-now
+      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: 1921
+#       items:
+#         - Nobel Prize in Physics
+#         - Matteucci Medal
+#     - year: 2029
+#       items:
+#         - Max Planck Medal
+
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items:
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
+
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.

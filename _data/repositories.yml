@@ -1,0 +1,11 @@
+github_users:
+  - ishwargov
+
+repo_description_lines_max: 2
+
+github_repos:
+  - ishwargov/PlexShare
+  - ishwargov/Deep-Weatherforecast
+  - ishwargov/Anti_Spoof_Face_Recognition
+  - ishwargov/PortfolioOptimization
+  - ishwargov/multi-paragraph-qa
