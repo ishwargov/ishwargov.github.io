@@ -41,12 +41,7 @@ ninja.data = [{
             window.open("https://medium.com/@ishwar.govind/inctf-2020-find-me-if-you-can-writeup-2120213feba1?source=rss-242c7d1e87db------2", "_blank");
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-have-joined-arista-networks-as-a-software-engineer",
+      },{id: "news-i-have-joined-arista-networks-as-a-software-engineer",
           title: 'I have joined Arista Networks as a Software Engineer.',
           description: "",
           section: "News",},{id: "news-my-paper-deployability-of-drl-in-portfolio-management-was-published-in-the-acm-8th-international-conference-on-data-science-and-management-of-data",
