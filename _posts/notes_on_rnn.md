@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Notes on RNN and LSTM for reference
-date: 2025-07-23 
+date: 2025-07-23 21:01:00
 description: Notes on paper - Fundamentals of Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM) Network
 tags: rnn lstm
-categories: 
-related_posts: false
+categories: formatting code
+featured: true
 ---
 
 ## Differential Equation derivation of RNN
