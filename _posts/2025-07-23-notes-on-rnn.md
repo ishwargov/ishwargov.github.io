@@ -4,24 +4,29 @@ title: Notes on RNN and LSTM for reference
 date: 2025-07-23 21:01:00
 description: Notes on paper - Fundamentals of Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM) Network
 tags: rnn lstm
-categories: formatting code
-featured: true
+categories: ML
+# featured: true
 ---
 
 ## Differential Equation derivation of RNN
 Let $s(t)$ be the d dimensional state signal vector and $h(s(t),x(t))$ be one of the canonical forms of a d-dimensional $f(t)$ where:
+
 $$
 \frac{ d s(t) }{ dt } = f(t) = h(s(t),x(t)) +\phi
 $$
+
 where one of its special case is based on the "additive model" in brain dynamics research literature given by $f(t) = a(t)+b(t)+c(t)$
 
 where:
+
 $$
 \frac{ds}{dt} = \sum^{K_s-1}_{k=0} a_k(s(t-\tau_s(k))) + \sum^{K_r-1}_{k=0} b_k(r(t-\tau_r(k))) + \sum^{K_x-1}_{k=0} c_k(x(t-\tau_x(k))) + \phi
 $$
+
 $$
 r(t-\tau_r(k)) = G(s(t-\tau_r(k)))
 $$
+
 Here $G(z)$ is considered a element-wise non-linear saturating "warping" ( activation ) function.
 
 The above equation is considered a nonlinear ordinary delay differential equation DDE with discrete delays. Delay is used to match the appropriate nature of the process.
@@ -37,6 +42,8 @@ The above equation is considered a nonlinear ordinary delay differential equatio
 Now assuming that the 3 functions associated with (a,b,c) are linear. (Continous Hopfield Network)
 Earlier studies linked the nonlinear dynamical systems formalized previously with $K_s=K_r=K_x=1$ and all $\tau's$ to zero to a type of neural network.
 Finally the equation, becomes:
+
+
 $$
 \frac{ds}{dt} = A(s(t)) + B(r(t-\tau)) + C(x(t)) + \phi
 $$ 
