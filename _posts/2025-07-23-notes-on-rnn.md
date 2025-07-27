@@ -57,4 +57,47 @@ $$
 
 The reason for setting $\tau$ to a single time step is to store the value of the readout signal into the memory for the next step. We can keep overwriting it for the next steps so on.
 
+$$
+s((n+1)\Delta T) - s(n\Delta T) = \Delta T (As((n+1)\Delta T) + Br(n\Delta T) + Cx((n+1)\Delta T) + \phi)
+$$
+
+Lets consider $(n \Delta T )$ as $[n]$,
+
+Which makes the equation:
+
+$$
+s[n+1] = s[n] + \Delta T(As[n+1]+Br[n]+Cx[n+1]+\phi)
+$$
+
+multiplying both sides with after moving $s[n+1]$ terms to one side of the equation.
+$W_s = (I-\Delta T A)^{-1}$ yields:
+
+$$
+s[n+1] = W_s s[n] + \Delta T W_s Br[n]+ \Delta T  W_s Cx[n+1]+ \Delta T W_s \phi
+$$
+
+applying,
+$$
+W_r = (\Delta T) W_s B \\
+W_x = (\Delta T) W_s C \\
+\theta_s = (\Delta T) W_s \phi
+$$
+
+
+we get
+
+$$
+s[n] = W_s s[n-1] + W_r r[n-1] + W_x x[n] + \theta_s \\
+r[n] = G(s[n]) \\
+$$
+
+The equation formed above later evolved into the LSTM system now we know today. 
+
+For the main equation above to be stable every eigenvalue of $\hat{W} = W_s + W_r $ should lie within the complex valued unit circle. This is to avoid exponential growth of variables.
+
+One way to implement that is to control the A and B variables - setting A to be a diagonal matrix with large negative values on its main diagonal which guarantees stability. Making $A^{-1}$ a small positive diagonal matrix leading to small impact of $s[n-1]$  on the systems trajectory.
+
+$$
+s[n] = W_r r[n-1] + W_x x[n] + \theta_s
+$$
 
