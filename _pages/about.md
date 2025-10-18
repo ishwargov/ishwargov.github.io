@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Software Engineer @ Arista
+subtitle: Msc. Computer Science at TUM 
 
 profile:
   align: right
