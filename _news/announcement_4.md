@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I have started my Msc. in Computer Science at Technical University of Munich.
+Started my Msc. in Computer Science at the Technical University of Munich.

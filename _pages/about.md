@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Msc. Computer Science at TUM 
+subtitle: CS @ TUM 
 
 profile:
   align: right
@@ -23,11 +23,12 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+Hi, I'm Ishwar. I am a Master's student in Computer Science at the [Technical University of Munich](https://www.tum.de/).
 
-I'm a master's student in computer science at the [Technical University of Munich](https://www.tum.de/) with a focus on AI. My main interests lie in reinforcement learning, quantitative finance and applying machine learning to complex real world systems.
+I am interested in building intelligent systems that can model complex environments and make optimal decisions under uncertainty. My primary focus is on Reinforcement Learning and its applications in Quantitative Finance.
 
-Previously, I worked as a software engineer specializing in low latency system software at [Arista Networks](https://www.arista.com/). I worked on **L3 routing** and stateful switchover mechanisms within the [Extensible Operating System](https://www.arista.com/en/products/eos). 
+Previously, I was a software engineer at [Arista Networks](https://www.arista.com/) where I worked on **L3 routing** and stateful switchover mechanisms within the [Extensible Operating System](https://www.arista.com/en/products/eos). 
 
-I did my bachelor's in computer science from [Indian Institute of Technology Palakkad](https://iitpkd.ac.in), where I collaborated with [Dr. Chandrashekar Lakshminarayanan](https://cerai.iitm.ac.in/people/chandrasekhar-lakshminarayanan/) on problems related to **Reinforcement Learning** and **Portfolio Management**. I have also worked with [Dr. Sarmistha Singh](https://sites.google.com/iitpkd.ac.in/sarmistha-arl) on **time series forecasting** for **climate modeling**.
+I receieved my bachelor's in computer science from [Indian Institute of Technology Palakkad](https://iitpkd.ac.in), where I collaborated with [Dr. Chandrashekar Lakshminarayanan](https://cerai.iitm.ac.in/people/chandrasekhar-lakshminarayanan/) on problems related to **Reinforcement Learning** and **Portfolio Management** and with [Dr. Sarmistha Singh](https://sites.google.com/iitpkd.ac.in/sarmistha-arl) on **time series forecasting** for **climate modeling**.
 
-I’m thrilled to connect and collaborate with other researchers and students. Feel free to reach out if you want to team up on some cool AI projects!
+I'm always excited to connect with other researchers and engineers. Feel free to reach out if you're working on similar problems :)
