@@ -21,6 +21,11 @@ manage_gemfile_lock() {
 
 start_jekyll() {
     manage_gemfile_lock
+    # Ensure all gems are installed before starting
+    if ! bundle check >/dev/null 2>&1; then
+        echo "Installing missing gems..."
+        bundle install --jobs=4 --retry=3
+    fi
     bundle exec jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling &
 }
 
