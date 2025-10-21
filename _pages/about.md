@@ -31,4 +31,4 @@ Previously, I was a software engineer at [Arista Networks](https://www.arista.co
 
 I receieved my bachelor's in computer science from [Indian Institute of Technology Palakkad](https://iitpkd.ac.in), where I collaborated with [Dr. Chandrashekar Lakshminarayanan](https://cerai.iitm.ac.in/people/chandrasekhar-lakshminarayanan/) on problems related to **Reinforcement Learning** and **Portfolio Management** and with [Dr. Sarmistha Singh](https://sites.google.com/iitpkd.ac.in/sarmistha-arl) on **time series forecasting** for **climate modeling**.
 
-I'm always excited to connect with other researchers and engineers. Feel free to reach out if you're working on similar problems :
+I'm always excited to connect with other researchers and engineers. Feel free to reach out if you're working on similar problems 😊
