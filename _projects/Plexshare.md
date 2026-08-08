@@ -3,7 +3,7 @@ layout: page
 title: PlexShare
 description: Lab Session Monitor 
 img: assets/img/PlexShare.png
-importance: 1
+importance: 3
 category: work
 related_publications: false
 ---

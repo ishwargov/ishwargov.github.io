@@ -3,7 +3,7 @@ layout: page
 title: Multi-Paragraph Question Answering
 description: using Pre-Trained Language Models
 img: assets/img/qa3.png
-importance: 3
+importance: 5
 category: work
 ---
 <a href="https://github.com/ishwargov/multi-paragraph-qa">GitHub Repo with Report</a>

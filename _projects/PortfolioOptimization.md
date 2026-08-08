@@ -3,7 +3,7 @@ layout: page
 title: Portfolio Optimization using Deep Reinforcement Learning
 description: 
 img: assets/img/7.jpg
-importance: 3
+importance: 5
 category: work
 ---
 <a href="https://github.com/ishwargov/PortfolioOptimization">GitHub Repo</a>
