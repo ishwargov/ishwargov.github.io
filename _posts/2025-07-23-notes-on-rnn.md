@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Notes on RNN and LSTM for reference
+title: Deriving the RNN from a delay differential equation
 date: 2025-07-23 21:01:00
 description: Notes on paper - Fundamentals of Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM) Network
 tags: rnn lstm
@@ -31,7 +31,7 @@ Here $G(z)$ is considered a element-wise non-linear saturating "warping" ( activ
 
 The above equation is considered a nonlinear ordinary delay differential equation DDE with discrete delays. Delay is used to match the appropriate nature of the process.
 
-`The rationale behind choosing a form of the hyperbolic tangent as the warping function is due to it being monotonic and negative-symmetric with quasi-linear region, whose slope can be regulated. Bipolarly Saturating ,   ` ( properties for an activation function ? )
+A hyperbolic tangent is the usual choice for the warping function, and the reasons double as a list of what one generally wants from an activation: it is monotonic, negative-symmetric, bipolarly saturating, and has a quasi-linear region whose slope can be regulated.
 
 - a - "analog" state singal ( controls the stability of the system )
 - b - long term behaviour from signals
@@ -48,7 +48,7 @@ $$
 \frac{ds}{dt} = A(s(t)) + B(r(t-\tau)) + C(x(t)) + \phi
 $$ 
 
-Applying [Euler discretization rule](https://math.libretexts.org/Bookshelves/Differential_Equations/Numerically_Solving_Ordinary_Differential_Equations_(Brorson)/01%3A_Chapters/1.02%3A_Forward_Euler_method) to the previous equation: ( for n time steps and $\tau$ as a single time step - $\Delta T$)
+Applying the [Euler discretization rule](https://math.libretexts.org/Bookshelves/Differential_Equations/Numerically_Solving_Ordinary_Differential_Equations_(Brorson)/01%3A_Chapters/1.02%3A_Forward_Euler_method) to the previous equation, over $n$ time steps and with $\tau$ set to a single step $\Delta T$:
 
 $$
 \frac{s(n \Delta T+ \Delta T ) - s(n\Delta T)}{\Delta T} =
@@ -91,7 +91,7 @@ s[n] = W_s s[n-1] + W_r r[n-1] + W_x x[n] + \theta_s \\
 r[n] = G(s[n]) \\
 $$
 
-The equation formed above later evolved into the LSTM system now we know today. 
+The equation formed above is what later evolved into the LSTM we know today.
 
 For the main equation above to be stable every eigenvalue of $\hat{W} = W_s + W_r $ should lie within the complex valued unit circle. This is to avoid exponential growth of variables.
 
@@ -100,4 +100,6 @@ One way to implement that is to control the A and B variables - setting A to be 
 $$
 s[n] = W_r r[n-1] + W_x x[n] + \theta_s
 $$
+
+Forcing stability this way is a blunt instrument, though: the same diagonal that keeps the eigenvalues inside the unit circle also suppresses how much $s[n-1]$ can carry forward, so the state stops holding onto anything for long. Gating is the way out of that trade-off, and it is where the LSTM picks up.
 
