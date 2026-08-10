@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Portfolio Optimization using Deep Reinforcement Learning
-description: 
+description: handing your portfolio to a transformer during the COVID crash
 img: assets/img/7.jpg
 importance: 5
 category: work

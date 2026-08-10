@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Multi-Paragraph Question Answering
-description: using Pre-Trained Language Models
+description: span extraction across many paragraphs, and knowing when to admit the answer isn't in any of them
 img: assets/img/qa3.png
 importance: 5
 category: work

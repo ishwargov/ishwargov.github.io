@@ -1,7 +1,7 @@
 ---
 layout: page
 title: PlexShare
-description: Lab Session Monitor 
+description: the lab session as a distributed system - screenshare, whiteboard, and enough telemetry to know who was actually paying attention
 img: assets/img/PlexShare.png
 importance: 3
 category: work

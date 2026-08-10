@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Deep Weather Forecast
-description: time-series forecasting using deep learning models
+description: teaching a ConvLSTM to predict the Indian monsoon, one 10x10 grid at a time
 img: assets/img/dwforecast.png 
 importance: 4
 category: work

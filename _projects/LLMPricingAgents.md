@@ -1,7 +1,7 @@
 ---
 layout: page
 title: LLM Pricing Agents in Bertrand Competition
-description: do autonomous LLM pricing agents learn to compete?
+description: nobody told them to collude, and they went straight to the monopoly price
 img: assets/img/bertrand_thumb.png
 importance: 2
 category: work
