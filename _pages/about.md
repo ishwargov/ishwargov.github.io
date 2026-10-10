@@ -6,7 +6,8 @@ subtitle: CS @ TUM
 
 profile:
   align: right
-  image: prof_pic_color2.jpg
+  image: ishwar-govind.jpg
+  image_alt: Ishwar Govind
   image_circular: false # crops the image to make it circular
   more_info: >
 

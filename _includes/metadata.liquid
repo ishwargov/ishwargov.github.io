@@ -238,4 +238,49 @@
         "@context": "https://schema.org"
     }
   </script>
+
+  {% if page.url == '/' %}
+    {% comment %} ProfilePage schema: ties the profile photo to the author's other profiles {% endcomment %}
+    {% assign profile_links = '' | split: ',' %}
+    {% if site.data.socials.github_username %}
+      {% capture link %}https://github.com/{{ site.data.socials.github_username }}{% endcapture %}
+      {% assign profile_links = profile_links | push: link %}
+    {% endif %}
+    {% if site.data.socials.scholar_userid %}
+      {% capture link %}https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}{% endcapture %}
+      {% assign profile_links = profile_links | push: link %}
+    {% endif %}
+    {% if site.data.socials.orcid_id %}
+      {% capture link %}https://orcid.org/{{ site.data.socials.orcid_id }}{% endcapture %}
+      {% assign profile_links = profile_links | push: link %}
+    {% endif %}
+    {% if site.data.socials.acm_id %}
+      {% capture link %}https://dl.acm.org/profile/{{ site.data.socials.acm_id }}{% endcapture %}
+      {% assign profile_links = profile_links | push: link %}
+    {% endif %}
+    {% if site.data.socials.linkedin_username %}
+      {% capture link %}https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}{% endcapture %}
+      {% assign profile_links = profile_links | push: link %}
+    {% endif %}
+    {% capture profile_image_url %}{{ page.profile.image | prepend: '/assets/img/' | absolute_url }}{% endcapture %}
+
+    <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@type": "ProfilePage",
+          "url": "{{ '/' | absolute_url }}",
+          "mainEntity":
+          {
+              "@type": "Person",
+              "name": "{{ author_name }}",
+              "url": "{{ '/' | absolute_url }}",
+              "image": "{{ profile_image_url }}",
+              "description": "{{ site.description }}",
+              "affiliation": { "@type": "CollegeOrUniversity", "name": "Technical University of Munich" },
+              "alumniOf": { "@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Palakkad" },
+              "sameAs": {{ profile_links | jsonify }}
+          }
+      }
+    </script>
+  {% endif %}
 {% endif %}

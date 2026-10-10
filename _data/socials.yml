@@ -2,7 +2,7 @@
 # the commented lines are the default social media links supported by the template
 # the socials will be displayed in the order they are defined here
 
-# acm_id: # your dl.acm.org/profile/id
+acm_id: 99661638051 # your dl.acm.org/profile/id
 # blogger_url: # your blogger URL
 # bluesky_url: # your bluesky URL
 # dblp_url: # your DBLP profile url
@@ -23,14 +23,14 @@ github_username: ishwargov # your GitHub user name
 linkedin_username: ishwargovind # your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
-# orcid_id: # your ORCID ID
+orcid_id: 0009-0000-7783-9865 # your ORCID ID
 # osf_id: # your OSF ID
 # pinterest_id: # your pinterest id
 # publons_id: # your ID on Publons
 # quora_username: # your Quora username
 # research_gate_profile: # your profile on ResearchGate
 # rss_icon: true # comment this line to hide the RSS icon
-# scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
+scholar_userid: b2Uf448AAAAJ # your Google Scholar ID
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
